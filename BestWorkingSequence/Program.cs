@@ -24,7 +24,7 @@ namespace BestWorkingSequence
                 this.deadline = deadline;
                 this.profit = profit;
                 this.time = time;
-                dtukyg
+      
             }
         }
 
