@@ -84,23 +84,24 @@ namespace BestWorkingSequence
     {
         public static void Main()
         {
-            Sequence.Job job1 = new Sequence.Job('a', 4, 100, 2);
-            Sequence.Job job2 = new Sequence.Job('b', 1, 19, 1);
-            Sequence.Job job3 = new Sequence.Job('c', 2, 27, 1);
-            Sequence.Job job4 = new Sequence.Job('d', 1, 25, 1);
-            Sequence.Job job5 = new Sequence.Job('e', 3, 15, 1);
+            Sequence.Job job1 = new Sequence.Job('a', 10, 2, 4);
+            Sequence.Job job2 = new Sequence.Job('b', 8, 3, 3);
+            Sequence.Job job3 = new Sequence.Job('c', 4, 3, 2);
+            Sequence.Job job4 = new Sequence.Job('d', 2, 6, 1);
+
 
             ArrayList job_list = new ArrayList();
             job_list.Add(job1);
             job_list.Add(job2);
             job_list.Add(job3);
             job_list.Add(job4);
-            job_list.Add(job5);
 
 
             Console.WriteLine("The best working sequence is as follows:");
             Sequence.JobScheduling(job_list);
             Console.WriteLine();
+
+         
         }
     }
 }
